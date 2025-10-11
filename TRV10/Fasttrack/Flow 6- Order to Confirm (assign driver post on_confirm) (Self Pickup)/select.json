@@ -1,0 +1,35 @@
+{
+  "context": {
+    "domain": "ONDC:TRV10",
+    "action": "select",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    },
+    "version": "2.0.1",
+    "bap_id": "preprod.ftdev.in",
+    "bap_uri": "https://preprod.ftdev.in/auto/v1/",
+    "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+    "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller",
+    "transaction_id": "7d3c6307-1d35-421b-86ed-751567444dc8",
+    "message_id": "a73963e6-b2f5-467a-8600-a185aa9f78f2",
+    "timestamp": "2025-10-11T06:46:21.873Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "I1"
+        }
+      ],
+      "provider": {
+        "id": "OD_101"
+      }
+    }
+  }
+}

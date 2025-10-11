@@ -1,0 +1,277 @@
+{
+  "context": {
+    "domain": "ONDC:TRV10",
+    "action": "on_search",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    },
+    "version": "2.0.1",
+    "bap_id": "preprod.ftdev.in",
+    "bap_uri": "https://preprod.ftdev.in/auto/v1/",
+    "transaction_id": "3982f50e-02fa-4ebf-adb2-6142f8c7763f",
+    "message_id": "7dc1445c-b12b-4641-b5d0-ed05eb3a8a5b",
+    "timestamp": "2025-10-11T06:59:01.586Z",
+    "ttl": "PT30S",
+    "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+    "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "name": "ONDC Pramaan Ride Services"
+      },
+      "providers": [
+        {
+          "id": "OD_101",
+          "fulfillments": [
+            {
+              "id": "d585b86f-b91b-406c-aeab-921019dbb799",
+              "stops": [
+                {
+                  "location": {
+                    "gps": "12.935549,77.605885"
+                  },
+                  "type": "START",
+                  "instructions": {
+                    "short_desc": "Information about location",
+                    "long_desc": "Information about location"
+                  }
+                },
+                {
+                  "location": {
+                    "gps": "12.935010,77.573460"
+                  },
+                  "type": "END"
+                }
+              ],
+              "type": "DELIVERY",
+              "vehicle": {
+                "category": "CAB",
+                "variant": "SUV",
+                "energy_type": "CNG"
+              }
+            },
+            {
+              "id": "9e79cde8-26aa-49bb-a827-70486aeb9d6e",
+              "stops": [
+                {
+                  "location": {
+                    "gps": "12.935549,77.605885"
+                  },
+                  "type": "START",
+                  "instructions": {
+                    "short_desc": "Information about location",
+                    "long_desc": "Information about location"
+                  }
+                },
+                {
+                  "location": {
+                    "gps": "12.935010,77.573460"
+                  },
+                  "type": "END"
+                }
+              ],
+              "type": "DELIVERY",
+              "vehicle": {
+                "category": "AUTO_RICKSHAW",
+                "variant": "AUTO_RICKSHAW",
+                "energy_type": "ELECTRIC"
+              }
+            },
+            {
+              "id": "f4960c5e-2e33-4787-bd0c-b1d5f7b6c3bd",
+              "stops": [
+                {
+                  "location": {
+                    "gps": "12.935549,77.605885"
+                  },
+                  "type": "START",
+                  "instructions": {
+                    "short_desc": "Information about location",
+                    "long_desc": "Information about location"
+                  }
+                },
+                {
+                  "location": {
+                    "gps": "12.935010,77.573460"
+                  },
+                  "type": "END"
+                }
+              ],
+              "type": "DELIVERY",
+              "vehicle": {
+                "category": "TWO_WHEELER",
+                "variant": "TWO_WHEELER",
+                "energy_type": "DIESEL"
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "I1",
+              "descriptor": {
+                "code": "RIDE",
+                "name": "Cab Ride"
+              },
+              "fulfillment_ids": [
+                "d585b86f-b91b-406c-aeab-921019dbb799"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "210.00",
+                "minimum_value": "190",
+                "maximum_value": "230"
+              },
+              "location_ids": [
+                "a0b417f2-35c8-40f1-80bc-4a9e4a63809c",
+                "c6539d3e-e8f0-4000-955a-53d4c65d99ef"
+              ]
+            },
+            {
+              "id": "I2",
+              "descriptor": {
+                "code": "RIDE",
+                "name": "Auto Ride"
+              },
+              "fulfillment_ids": [
+                "9e79cde8-26aa-49bb-a827-70486aeb9d6e"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "210.00",
+                "minimum_value": "190",
+                "maximum_value": "230"
+              },
+              "location_ids": [
+                "ab89c003-c192-443c-81c5-f52e2f9fb8b5",
+                "709fd8f6-1d2d-4532-91f2-76f5661ba511"
+              ]
+            },
+            {
+              "id": "I3",
+              "descriptor": {
+                "code": "RIDE",
+                "name": "Two Wheeler"
+              },
+              "fulfillment_ids": [
+                "f4960c5e-2e33-4787-bd0c-b1d5f7b6c3bd"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "210.00",
+                "minimum_value": "190",
+                "maximum_value": "230"
+              },
+              "location_ids": [
+                "40683949-8bbf-499a-a192-34dca55cc1ec",
+                "70ccbc9a-cba6-4ce7-b19d-19111979d21f"
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "gps": "12.935549,77.605885",
+              "id": "a0b417f2-35c8-40f1-80bc-4a9e4a63809c"
+            },
+            {
+              "gps": "12.935549,77.605895",
+              "id": "c6539d3e-e8f0-4000-955a-53d4c65d99ef"
+            },
+            {
+              "gps": "12.935549,77.605905",
+              "id": "ab89c003-c192-443c-81c5-f52e2f9fb8b5"
+            },
+            {
+              "gps": "12.935549,77.605865",
+              "id": "709fd8f6-1d2d-4532-91f2-76f5661ba511"
+            },
+            {
+              "gps": "12.935549,77.605915",
+              "id": "40683949-8bbf-499a-a192-34dca55cc1ec"
+            },
+            {
+              "gps": "12.935549,77.605855",
+              "id": "70ccbc9a-cba6-4ce7-b19d-19111979d21f"
+            }
+          ],
+          "payments": [
+            {
+              "collected_by": "BPP",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES"
+                  },
+                  "display": false,
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                      },
+                      "value": "3"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_TERMS"
+                  },
+                  "display": false,
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "SETTLEMENT_WINDOW"
+                      },
+                      "value": "PT60M"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "SETTLEMENT_BASIS"
+                      },
+                      "value": "DELIVERY"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "SETTLEMENT_TYPE"
+                      },
+                      "value": "UPI"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "MANDATORY_ARBITRATION"
+                      },
+                      "value": "true"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "COURT_JURISDICTION"
+                      },
+                      "value": "New Delhi"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "DELAY_INTEREST"
+                      },
+                      "value": "2.5"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "STATIC_TERMS"
+                      },
+                      "value": "https://example-test-bpp.com/static-terms.txt"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

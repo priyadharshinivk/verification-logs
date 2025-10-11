@@ -1,0 +1,155 @@
+{
+        "context": {
+          "domain": "ONDC:TRV10",
+          "action": "confirm",
+          "location": {
+            "country": {
+              "code": "IND"
+            },
+            "city": {
+              "code": "std:080"
+            }
+          },
+          "version": "2.0.1",
+          "bap_id": "preprod.ftdev.in",
+          "bap_uri": "https://preprod.ftdev.in/auto/v1/",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller",
+          "transaction_id": "444ae1ea-86cb-4e9e-b331-5233df05ac23",
+          "message_id": "ada7c349-a0bd-461c-b574-b109f7f6d456",
+          "timestamp": "2025-10-10T08:49:03.340Z",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "order": {
+            "billing": {
+              "name": "test booking"
+            },
+            "fulfillments": [
+              {
+                "customer": {
+                  "contact": {
+                    "phone": "8056114016"
+                  },
+                  "person": {
+                    "name": "test booking"
+                  }
+                },
+                "id": "e5a3cb9a-6cd5-49e8-8ad5-ad4d8217b780",
+                "stops": [
+                  {
+                    "location": {
+                      "gps": "12.935549,77.605885"
+                    },
+                    "type": "START"
+                  },
+                  {
+                    "location": {
+                      "gps": "12.935010,77.573460"
+                    },
+                    "type": "END"
+                  }
+                ],
+                "vehicle": {
+                  "category": "CAB",
+                  "variant": "SUV",
+                  "energy_type": "CNG"
+                }
+              }
+            ],
+            "items": [
+              {
+                "id": "I1"
+              }
+            ],
+            "payments": [
+              {
+                "collected_by": "BPP",
+                "id": "4501f8e3-cd34-4f11-96e1-53cf7a1c3d03",
+                "params": {
+                  "bank_account_number": "003802000005200",
+                  "bank_code": "IOBA0000038",
+                  "virtual_payment_address": "9988199772@okicic"
+                },
+                "status": "NOT-PAID",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES"
+                    },
+                    "display": false,
+                    "list": [
+                      {
+                        "descriptor": {
+                          "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                        },
+                        "value": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_TERMS"
+                    },
+                    "display": false,
+                    "list": [
+                      {
+                        "descriptor": {
+                          "code": "SETTLEMENT_WINDOW"
+                        },
+                        "value": "P30D"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "SETTLEMENT_BASIS"
+                        },
+                        "value": "DELIVERY"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "SETTLEMENT_TYPE"
+                        },
+                        "value": "NEFT"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "MANDATORY_ARBITRATION"
+                        },
+                        "value": "true"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "COURT_JURISDICTION"
+                        },
+                        "value": "New Delhi"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "DELAY_INTEREST"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "STATIC_TERMS"
+                        },
+                        "value": "https://example-test-bap.com/static-terms.txt"
+                      },
+                      {
+                        "descriptor": {
+                          "code": "SETTLEMENT_AMOUNT"
+                        },
+                        "value": "6.30"
+                      }
+                    ]
+                  }
+                ],
+                "type": "ON-FULFILLMENT"
+              }
+            ],
+            "provider": {
+              "id": "OD_101"
+            }
+          }
+        }
+      }

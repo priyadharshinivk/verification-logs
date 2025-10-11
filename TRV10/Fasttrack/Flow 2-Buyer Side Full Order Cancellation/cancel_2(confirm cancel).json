@@ -1,0 +1,31 @@
+{
+        "context": {
+          "domain": "ONDC:TRV10",
+          "action": "cancel",
+          "location": {
+            "country": {
+              "code": "IND"
+            },
+            "city": {
+              "code": "std:080"
+            }
+          },
+          "version": "2.0.1",
+          "bap_id": "preprod.ftdev.in",
+          "bap_uri": "https://preprod.ftdev.in/auto/v1/",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller",
+          "transaction_id": "444ae1ea-86cb-4e9e-b331-5233df05ac23",
+          "message_id": "085c1570-10a5-4e98-bb7b-edcf541413d9",
+          "timestamp": "2025-10-10T08:52:22.560Z",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "cancellation_reason_id": "001",
+          "descriptor": {
+            "code": "CONFIRM_CANCEL",
+            "name": "Ride Cancellation"
+          },
+          "order_id": "b4079498-591b-4431-b50b-b53420585ff2"
+        }
+      }

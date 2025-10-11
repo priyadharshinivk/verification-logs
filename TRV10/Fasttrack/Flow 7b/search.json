@@ -1,0 +1,80 @@
+{
+  "context": {
+    "domain": "ONDC:TRV10",
+    "action": "search",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    },
+    "version": "2.0.1",
+    "bap_id": "preprod.ftdev.in",
+    "bap_uri": "https://preprod.ftdev.in/auto/v1/",
+    "transaction_id": "3982f50e-02fa-4ebf-adb2-6142f8c7763f",
+    "message_id": "7dc1445c-b12b-4641-b5d0-ed05eb3a8a5b",
+    "timestamp": "2025-10-11T06:59:01.524Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "stops": [
+          {
+            "location": {
+              "gps": "12.935549,77.605885"
+            },
+            "type": "START"
+          },
+          {
+            "location": {
+              "gps": "12.935010,77.573460"
+            },
+            "type": "END"
+          }
+        ]
+      },
+      "payment": {
+        "collected_by": "BPP",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "BUYER_FINDER_FEES"
+            },
+            "display": false,
+            "list": [
+              {
+                "descriptor": {
+                  "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                },
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_TERMS"
+            },
+            "display": false,
+            "list": [
+              {
+                "descriptor": {
+                  "code": "DELAY_INTEREST"
+                },
+                "value": "0"
+              },
+              {
+                "descriptor": {
+                  "code": "STATIC_TERMS"
+                },
+                "value": "https://example-test-bap.com/static-terms.txt"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
